@@ -11,19 +11,15 @@ import { AppShell } from "@/components/layout/app-shell";
 export default function HomePage() {
   return (
     <AppShell>
-      <div className="grid w-full gap-10 lg:grid-cols-[200px_minmax(0,1fr)]">
-        <div className="hidden lg:block">
-          <SideNav />
-        </div>
-        <div className="flex flex-col gap-10">
-          <HeroSection />
-          <AboutSection />
-          <WorkExperienceSection />
-          <SkillsSection />
-          <EducationSection />
-          <PortfolioCTA />
-          <ContactSection />
-        </div>
+      <SideNav />
+      <div className="flex w-full flex-col gap-10">
+        <HeroSection />
+        <AboutSection />
+        <WorkExperienceSection />
+        <SkillsSection />
+        <EducationSection />
+        <PortfolioCTA />
+        <ContactSection />
       </div>
     </AppShell>
   );

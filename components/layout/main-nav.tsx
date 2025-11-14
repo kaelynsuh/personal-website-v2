@@ -29,7 +29,7 @@ export function MainNav() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-6 font-medium text-brand-ink/80 lg:flex">
+        <nav className="hidden items-center gap-6 font-medium text-brand-ink/80 sm:flex">
           {primaryLinks.map((link) => (
             <Link
               key={link.href}
@@ -45,7 +45,7 @@ export function MainNav() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="rounded-md p-2 transition-colors hover:bg-brand-100"
+            className="cursor-pointer rounded-md p-2 transition-colors hover:bg-brand-300"
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
             {theme === 'light' ? (
@@ -97,7 +97,7 @@ export function MainNav() {
                 toggleTheme();
                 setOpen(false);
               }}
-              className="mt-4 flex items-center gap-2 rounded-md px-1 py-1 text-lg font-medium text-brand-ink transition-colors hover:text-brand-600"
+              className="mt-4 flex cursor-pointer items-center gap-2 rounded-md px-1 py-1 text-lg font-medium text-brand-ink transition-colors hover:text-brand-600"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
               {theme === 'light' ? (

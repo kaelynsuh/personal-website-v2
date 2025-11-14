@@ -11,17 +11,11 @@ export function HeroSection() {
       <div className="grid gap-10 px-6 py-12 md:grid-cols-[1.4fr_1fr] md:px-12 md:py-16">
         <div className="flex flex-col justify-center gap-6">
           <div>
-            <span className="text-sm uppercase tracking-[0.4em] text-brand-600">
-              Hello, I&apos;m
-            </span>
-            <h1 className="mt-3 text-4xl font-semibold leading-tight text-brand-ink md:text-5xl">
+            <h1 className="mt-3 text-4xl leading-tight text-brand-ink md:text-5xl">
               {profile.name}
             </h1>
             <p className="mt-2 text-lg font-medium text-brand-ink/80 md:text-xl">
               {profile.title}
-            </p>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand-ink/60">
-              {profile.location}
             </p>
           </div>
 

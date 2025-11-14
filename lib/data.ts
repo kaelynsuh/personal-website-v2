@@ -1,7 +1,6 @@
 export const profile = {
   name: "Kaelyn Suh",
   title: "Software Engineer",
-  location: "Irvine, California",
   summary: [
     "Hi! My name is Kaelyn. I'm a Software Engineer from Canada based in Irvine, California. I am passionate about building beautiful interfaces and making the web accessible for all.",
     "Currently I am working at Blizzard Entertainment on the Battle.net e-commerce storefront delivering games and experiences to millions of players. Previously I worked at Uplift making travel accessible and affordable for everyone, prior to that I was at Ample Organics making medical cannabis safely accessible to those in need, and I also worked at E-Data Now making quality assurance compliant in the automotive space.",
@@ -10,6 +9,7 @@ export const profile = {
 };
 
 export const navSections = [
+  { id: "home", label: "Home" },
   { id: "about", label: "About Me" },
   { id: "experience", label: "Work Experience" },
   { id: "skills", label: "Skills" },
@@ -129,7 +129,7 @@ export const contactLinks = [
   },
   {
     label: "Twitch",
-    href: "https://www.twitch.tv/kae_tv",
+    href: "https://www.twitch.tv/kaelynge",
     icon: "twitch",
   },
 ];
