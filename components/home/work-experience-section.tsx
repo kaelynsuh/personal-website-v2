@@ -10,9 +10,6 @@ export function WorkExperienceSection() {
         <h2 className="text-3xl font-semibold text-brand-ink">
           Work Experience
         </h2>
-        <p className="mt-2 text-brand-ink/70">
-          Highlights from roles across gaming, travel, and regulated industries.
-        </p>
       </header>
 
       <div className="space-y-10">

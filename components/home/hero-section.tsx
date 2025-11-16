@@ -8,7 +8,7 @@ export function HeroSection() {
       id="hero"
       className="relative overflow-hidden rounded-3xl bg-brand-50 shadow-sm"
     >
-      <div className="grid gap-10 px-6 py-12 md:grid-cols-[1.4fr_1fr] md:px-12 md:py-16">
+      <div className="grid gap-6 px-6 py-12 md:grid-cols-[1.2fr_1fr] md:px-12 md:py-16">
         <div className="flex flex-col justify-center gap-6">
           <div>
             <h1 className="mt-3 text-4xl leading-tight text-brand-ink md:text-5xl">
@@ -18,10 +18,6 @@ export function HeroSection() {
               {profile.title}
             </p>
           </div>
-
-          <p className="max-w-xl text-base leading-7 text-brand-ink/80 md:text-lg">
-            {profile.summary[0]}
-          </p>
 
           <div className="flex flex-wrap gap-3">
             <Link
@@ -39,15 +35,15 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative flex items-center justify-center md:justify-start">
           <div className="absolute inset-0 rounded-full bg-brand-300/40 blur-3xl" />
-          <div className="relative mx-auto max-w-sm overflow-hidden rounded-[2.5rem] border border-brand-100 shadow-lg">
+          <div className="relative mx-auto aspect-square max-w-48 overflow-hidden rounded-full border border-brand-100 shadow-lg">
             <Image
-              src="/images/kae.jpeg"
+              src="/images/kae.jpg"
               alt="Kaelyn smiling"
-              width={640}
+              width={800}
               height={800}
-              className="h-full w-full object-cover"
+              className="h-full w-full scale-130 object-cover object-[center_25%]"
               priority
             />
           </div>

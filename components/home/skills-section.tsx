@@ -8,9 +8,6 @@ export function SkillsSection() {
     >
       <header className="mb-8">
         <h2 className="text-3xl font-semibold text-brand-ink">Skills</h2>
-        <p className="mt-2 text-brand-ink/70">
-          A snapshot of the technologies and tools I rely on most.
-        </p>
       </header>
 
       <div className="grid gap-6 md:grid-cols-3">

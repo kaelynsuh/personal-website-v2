@@ -18,7 +18,8 @@ export default function HomePage() {
         <WorkExperienceSection />
         <SkillsSection />
         <EducationSection />
-        <PortfolioCTA />
+        {/* TODO: Add portfolio CTA back in */}
+        {/* <PortfolioCTA /> */}
         <ContactSection />
       </div>
     </AppShell>

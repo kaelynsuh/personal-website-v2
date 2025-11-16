@@ -41,7 +41,8 @@ export function MainNav() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-4">
+        {/* TODO: Add theme toggle back in */}
+        {/* <div className="ml-auto flex items-center gap-4">
           <button
             type="button"
             onClick={toggleTheme}
@@ -63,7 +64,7 @@ export function MainNav() {
           >
             <Menu className="h-6 w-6" />
           </button>
-        </div>
+        </div> */}
       </div>
 
       {open && (

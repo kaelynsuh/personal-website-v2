@@ -29,10 +29,15 @@ export const metadata: Metadata = {
   description:
     'Software engineer portfolio highlighting experience, projects, and ways to get in touch with Kaelyn Suh.',
   metadataBase: new URL('https://kaelyn.dev'),
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
   openGraph: {
     title: 'Kaelyn Suh | Software Engineer',
     description:
-      'Explore Kaelyn Suh’s experience, selected projects, and contact information.',
+      "Explore Kaelyn Suh's experience, selected projects, and contact information.",
     url: 'https://kaelyn.dev',
     siteName: 'Kaelyn Suh',
     type: 'website',
@@ -41,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kaelyn Suh | Software Engineer',
     description:
-      'Explore Kaelyn Suh’s experience, selected projects, and contact information.',
+      "Explore Kaelyn Suh's experience, selected projects, and contact information.",
   },
 };
 

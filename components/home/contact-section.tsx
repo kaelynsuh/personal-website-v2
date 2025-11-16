@@ -1,11 +1,4 @@
-import {
-  Github,
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitch,
-  Twitter,
-} from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Twitch } from 'lucide-react';
 import Link from 'next/link';
 import { contactLinks } from '@/lib/data';
 
@@ -13,7 +6,6 @@ const iconMap = {
   github: Github,
   linkedin: Linkedin,
   instagram: Instagram,
-  twitter: Twitter,
   twitch: Twitch,
 };
 
@@ -25,9 +17,6 @@ export function ContactSection() {
     >
       <header className="mb-8">
         <h2 className="text-3xl font-semibold text-brand-ink">Contact Me</h2>
-        <p className="mt-2 text-brand-ink/70">
-          Reach out for collaboration, speaking engagements, or just to say hi.
-        </p>
       </header>
 
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
