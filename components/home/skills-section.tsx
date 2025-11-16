@@ -1,4 +1,4 @@
-import { skills } from "@/lib/data";
+import { skills } from '@/lib/data';
 
 export function SkillsSection() {
   return (
@@ -33,4 +33,3 @@ export function SkillsSection() {
     </section>
   );
 }
-

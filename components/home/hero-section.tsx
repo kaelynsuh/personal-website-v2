@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { profile } from "@/lib/data";
+import Image from 'next/image';
+import Link from 'next/link';
+import { profile } from '@/lib/data';
 
 export function HeroSection() {
   return (
@@ -56,4 +56,3 @@ export function HeroSection() {
     </section>
   );
 }
-

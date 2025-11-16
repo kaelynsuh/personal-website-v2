@@ -24,7 +24,7 @@ export function SideNav() {
                   {section.label}
                 </span>
                 {activeId === section.id ? (
-                  <Circle className="h-4 w-4" fill="black"/>
+                  <Circle className="h-4 w-4" fill="black" />
                 ) : (
                   <Circle className="h-4 w-4" />
                 )}
@@ -36,4 +36,3 @@ export function SideNav() {
     </aside>
   );
 }
-

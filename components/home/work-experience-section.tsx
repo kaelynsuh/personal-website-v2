@@ -1,4 +1,4 @@
-import { workHistory } from "@/lib/data";
+import { workHistory } from '@/lib/data';
 
 export function WorkExperienceSection() {
   return (
@@ -7,7 +7,9 @@ export function WorkExperienceSection() {
       className="rounded-3xl border border-brand-100 bg-white px-6 py-12 shadow-sm md:px-12"
     >
       <header className="mb-10">
-        <h2 className="text-3xl font-semibold text-brand-ink">Work Experience</h2>
+        <h2 className="text-3xl font-semibold text-brand-ink">
+          Work Experience
+        </h2>
         <p className="mt-2 text-brand-ink/70">
           Highlights from roles across gaming, travel, and regulated industries.
         </p>
@@ -43,4 +45,3 @@ export function WorkExperienceSection() {
     </section>
   );
 }
-

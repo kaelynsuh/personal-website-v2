@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import { AppShell } from "@/components/layout/app-shell";
-import Link from "next/link";
+import type { Metadata } from 'next';
+import { AppShell } from '@/components/layout/app-shell';
+import Link from 'next/link';
 
 type Repo = {
   id: number;
@@ -13,18 +13,18 @@ type Repo = {
 };
 
 export const metadata: Metadata = {
-  title: "Portfolio | Kaelyn Suh",
+  title: 'Portfolio | Kaelyn Suh',
   description:
-    "Browse open source projects and code experiments by software engineer Kaelyn Suh.",
+    'Browse open source projects and code experiments by software engineer Kaelyn Suh.',
 };
 
 async function getRepositories(): Promise<Repo[]> {
   try {
     const response = await fetch(
-      "https://api.github.com/users/kaelynsuh/repos?per_page=100",
+      'https://api.github.com/users/kaelynsuh/repos?per_page=100',
       {
         headers: {
-          Accept: "application/vnd.github+json",
+          Accept: 'application/vnd.github+json',
         },
         next: { revalidate: 60 * 60 },
       },
@@ -42,7 +42,7 @@ async function getRepositories(): Promise<Repo[]> {
           new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime(),
       );
   } catch (error) {
-    console.error("Error fetching repositories", error);
+    console.error('Error fetching repositories', error);
     return [];
   }
 }
@@ -66,8 +66,8 @@ export default async function PortfolioPage() {
         {repositories.length === 0 ? (
           <div className="rounded-3xl border border-brand-100 bg-white px-6 py-12 text-center shadow-sm md:px-12">
             <p className="text-brand-ink/75">
-              There was an issue fetching projects from GitHub. Please try
-              again later.
+              There was an issue fetching projects from GitHub. Please try again
+              later.
             </p>
           </div>
         ) : (
@@ -92,11 +92,11 @@ export default async function PortfolioPage() {
                     dateTime={repo.pushed_at}
                     className="text-xs uppercase tracking-[0.25em] text-brand-ink/50"
                   >
-                    Updated{" "}
+                    Updated{' '}
                     {new Date(repo.pushed_at).toLocaleDateString(undefined, {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric',
                     })}
                   </time>
                 </div>
@@ -123,4 +123,3 @@ export default async function PortfolioPage() {
     </AppShell>
   );
 }
-

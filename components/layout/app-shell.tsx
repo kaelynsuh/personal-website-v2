@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
-import { MainNav } from "./main-nav";
-import { SiteFooter } from "./site-footer";
+import type { ReactNode } from 'react';
+import { MainNav } from './main-nav';
+import { SiteFooter } from './site-footer';
 
 export function AppShell({ children }: { children: ReactNode }) {
   return (
@@ -13,4 +13,3 @@ export function AppShell({ children }: { children: ReactNode }) {
     </div>
   );
 }
-

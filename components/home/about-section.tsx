@@ -1,4 +1,4 @@
-import { profile } from "@/lib/data";
+import { profile } from '@/lib/data';
 
 export function AboutSection() {
   return (
@@ -17,4 +17,3 @@ export function AboutSection() {
     </section>
   );
 }
-

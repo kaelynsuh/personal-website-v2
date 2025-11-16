@@ -1,4 +1,4 @@
-import { education } from "@/lib/data";
+import { education } from '@/lib/data';
 
 export function EducationSection() {
   return (
@@ -29,4 +29,3 @@ export function EducationSection() {
     </section>
   );
 }
-
