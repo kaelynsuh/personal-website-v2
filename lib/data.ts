@@ -135,6 +135,12 @@ export const contactLinks = [
     display: 'kaelyn@kaelyn.dev',
   },
   {
+    label: 'Resume',
+    href: '/resume.pdf',
+    icon: 'file-text',
+    display: 'Resume',
+  },
+  {
     label: 'GitHub',
     href: 'https://github.com/kaelynsuh',
     icon: 'github',
