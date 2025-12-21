@@ -11,7 +11,7 @@ export const profile = {
   name: 'Kaelyn Suh',
   title: 'Software Engineer',
   summary: [
-    "Hi! My name is Kaelyn. I'm a Software Engineer from Canada based in Irvine, California. I am passionate about building beautiful interfaces and making the web accessible for all.",
+    "Hi! My name is Kaelyn. I'm a Software Engineer from Canada based in San Diego, California. I am passionate about building beautiful interfaces and making the web accessible for all.",
     'Most recently, I was a Founding Engineer at Lil Snack, where I built the daily games platform delivering engaging new player experiences, social systems, onboarding flows, brand integrations, internal tools, and core platform infrastructure.',
     'I also worked at Blizzard Entertainment on the Battle.net e-commerce storefront, delivering games and experiences to millions of players. Prior to that, I worked at Uplift making travel accessible and affordable for everyone, at Ample Organics making medical cannabis safely accessible to those in need, and at E-Data Now ensuring quality assurance compliance in the automotive industry.',
     'When I am not coding, you can find me rock climbing, cosplaying, streaming video games on Twitch, attempting digital art, or binging anime.',
@@ -128,36 +128,31 @@ export const education = {
   ],
 };
 
-export const contactLinks = [
+export type ContactLink = {
+  label: string;
+  icon: string;
+  href: string;
+};
+
+export const contactLinks: ContactLink[] = [
   {
     label: 'Email',
+    icon: 'Mail',
     href: 'mailto:kaelyn@kaelyn.dev',
-    display: 'kaelyn@kaelyn.dev',
   },
   {
     label: 'Resume',
+    icon: 'FileText',
     href: '/resume.pdf',
-    icon: 'file-text',
-    display: 'Resume',
-  },
-  {
-    label: 'GitHub',
-    href: 'https://github.com/kaelynsuh',
-    icon: 'github',
   },
   {
     label: 'LinkedIn',
+    icon: 'Linkedin',
     href: 'https://www.linkedin.com/in/kaelynsuh',
-    icon: 'linkedin',
   },
   {
-    label: 'Instagram',
-    href: 'https://www.instagram.com/kaelynge',
-    icon: 'instagram',
-  },
-  {
-    label: 'Twitch',
-    href: 'https://www.twitch.tv/kaelynge',
-    icon: 'twitch',
+    label: 'GitHub',
+    icon: 'Github',
+    href: 'https://github.com/kaelynsuh',
   },
 ];
