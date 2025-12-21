@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { profile } from '@/lib/data';
 
-export function HeroSection() {
+export function Intro() {
   return (
     <section
-      id="hero"
+      id="intro"
       className="relative overflow-hidden rounded-3xl bg-brand-50 shadow-sm"
     >
       <div className="flex flex-col gap-8 px-6 py-12 md:flex-row md:items-center md:gap-8 md:px-12 md:py-16">

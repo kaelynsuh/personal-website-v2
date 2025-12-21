@@ -1,7 +1,7 @@
 import { profile } from '@/lib/data';
 import { parseTextWithLinks } from '@/lib/text-utils';
 
-export function AboutSection() {
+export function About() {
   return (
     <section
       id="about"

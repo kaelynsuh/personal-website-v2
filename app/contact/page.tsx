@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { ContactSection } from '@/components/home/contact-section';
-import { AppShell } from '@/components/layout/app-shell';
+import { Contact } from '@/components/home/Contact';
+import { AppShell } from '@/components/layout/AppShell';
 
 export const metadata: Metadata = {
   title: 'Contact | Kaelyn Suh',
@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <AppShell>
       <div className="w-full">
-        <ContactSection />
+        <Contact />
       </div>
     </AppShell>
   );

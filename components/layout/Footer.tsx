@@ -3,7 +3,7 @@
 import { ArrowUp } from 'lucide-react';
 import { useCallback } from 'react';
 
-export function SiteFooter() {
+export function Footer() {
   const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);

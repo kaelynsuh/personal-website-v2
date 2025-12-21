@@ -10,7 +10,7 @@ const iconMap: Record<string, LucideIcon> = {
   Github,
 } as const;
 
-export function ContactSection() {
+export function Contact() {
   return (
     <section
       id="contact"

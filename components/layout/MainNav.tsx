@@ -4,7 +4,7 @@ import { Menu, Moon, Sun, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useTheme } from '@/components/theme-provider';
+import { useTheme } from '@/components/ThemeProvider';
 
 const primaryLinks = [
   { href: '/', label: 'Home' },

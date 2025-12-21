@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Indie_Flower, Libre_Baskerville, Raleway } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import './globals.css';
 
 const raleway = Raleway({

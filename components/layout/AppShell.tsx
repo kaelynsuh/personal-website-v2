@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import { MainNav } from './main-nav';
-import { SiteFooter } from './site-footer';
+import { MainNav } from './MainNav';
+import { Footer } from './Footer';
 
 export function AppShell({ children }: { children: ReactNode }) {
   return (
@@ -9,7 +9,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-12 md:px-8 md:py-16">
         {children}
       </main>
-      <SiteFooter />
+      <Footer />
     </div>
   );
 }

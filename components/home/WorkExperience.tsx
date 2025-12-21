@@ -1,6 +1,6 @@
 import { workHistory } from '@/lib/data';
 
-export function WorkExperienceSection() {
+export function WorkExperience() {
   return (
     <section
       id="experience"

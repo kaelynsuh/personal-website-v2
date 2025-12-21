@@ -1,6 +1,6 @@
 import { education } from '@/lib/data';
 
-export function EducationSection() {
+export function Education() {
   return (
     <section
       id="education"
