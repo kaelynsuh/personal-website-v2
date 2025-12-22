@@ -25,9 +25,9 @@ const indieFlower = Indie_Flower({
 });
 
 export const metadata: Metadata = {
-  title: 'Kaelyn Suh | Software Engineer',
+  title: 'Kaelyn Suh',
   description:
-    'Software engineer portfolio highlighting experience, projects, and ways to get in touch with Kaelyn Suh.',
+    'Kaelyn Suh is a software engineer focused on building thoughtful, product-driven web experiences.',
   metadataBase: new URL('https://kaelyn.dev'),
   icons: {
     icon: '/images/logo.png',
@@ -35,18 +35,18 @@ export const metadata: Metadata = {
     apple: '/images/logo.png',
   },
   openGraph: {
-    title: 'Kaelyn Suh | Software Engineer',
+    title: 'Kaelyn Suh',
     description:
-      "Explore Kaelyn Suh's experience, selected projects, and contact information.",
+      'Kaelyn Suh is a software engineer focused on building thoughtful, product-driven web experiences.',
     url: 'https://kaelyn.dev',
     siteName: 'Kaelyn Suh',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kaelyn Suh | Software Engineer',
+    title: 'Kaelyn Suh',
     description:
-      "Explore Kaelyn Suh's experience, selected projects, and contact information.",
+      'Kaelyn Suh is a software engineer focused on building thoughtful, product-driven web experiences.',
   },
 };
 

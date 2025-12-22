@@ -3,7 +3,7 @@
 import { Menu, Moon, Sun, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTheme } from '@/components/ThemeProvider';
 
 const primaryLinks = [
@@ -14,22 +14,46 @@ const primaryLinks = [
 
 export function MainNav() {
   const [open, setOpen] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
-  return (
-    <header className="sticky top-0 z-50 border-b border-transparent bg-background/90 backdrop-blur transition-colors duration-200">
-      <div className="mx-auto flex w-full max-w-5xl items-center gap-8 px-4 py-4 md:px-8">
-        <Link href="/" aria-label="Home">
-          <Image
-            src="/images/logo.png"
-            alt="logo"
-            width={40}
-            height={40}
-            priority
-          />
-        </Link>
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowLogo(window.scrollY > 0);
+    };
 
-        <nav className="hidden items-center gap-6 font-medium text-brand-ink/80 sm:flex">
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={`sticky top-0 z-1 border-b border-transparent backdrop-blur transition-colors duration-200 h-[72px] ${
+        showLogo ? 'bg-background/80' : 'bg-transparent'
+      }`}
+    >
+      <div className="mx-auto flex justify-between max-w-5xl items-center gap-8 p-4 md:px-8">
+        <div className="size-[40px] flex items-center justify-center">
+          <Link
+            href="/"
+            aria-label="Home"
+            className={`transition-opacity duration-300 ${
+              showLogo ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+          >
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width={40}
+              height={40}
+              priority
+            />
+          </Link>
+        </div>
+
+        <nav className="hidden h-full items-center gap-6 font-medium text-brand-ink/80 sm:flex">
           {primaryLinks.map((link) => (
             <Link
               key={link.href}
