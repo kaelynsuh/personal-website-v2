@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { MainNav } from './MainNav';
 import { Footer } from './Footer';
 
-export function AppShell({ children }: { children: ReactNode }) {
+export function AppShell({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <div className="flex min-h-screen flex-col bg-brand-50/40 text-brand-ink">
       <MainNav />

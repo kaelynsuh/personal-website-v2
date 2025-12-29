@@ -14,7 +14,7 @@ export function Skills() {
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}
-            className="rounded-2xl border border-brand-50 bg-brand-50/60 p-6"
+            className="rounded-2xl border border-brand-50 bg-brand-50/60"
           >
             <h3 className="text-lg font-semibold text-brand-ink">{category}</h3>
             <ul className="mt-4 space-y-2 text-brand-ink/80">

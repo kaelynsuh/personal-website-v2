@@ -14,13 +14,10 @@ export function WorkExperience() {
 
       <div className="space-y-10">
         {workHistory.map((job) => (
-          <article
-            key={`${job.role}-${job.company}`}
-            className="rounded-2xl border border-brand-50 bg-brand-50/40 px-6 py-6 shadow-inner"
-          >
+          <article key={`${job.role}-${job.company}`} className="rounded-2xl">
             <header className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div>
-                <h3 className="text-2xl font-semibold text-brand-ink">
+                <h3 className="text-xl font-semibold text-brand-ink">
                   {job.role}
                 </h3>
                 <p className="text-brand-ink/70">{job.company}</p>

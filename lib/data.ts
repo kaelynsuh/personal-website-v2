@@ -93,28 +93,41 @@ export const workHistory = [
 ];
 
 export const skills = {
-  Technologies: [
-    'Angular',
-    'RxJS',
+  Core: [
     'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript',
+    'HTML & CSS',
+    'Node.js',
+  ],
+
+  Platform: [
     'Redux',
-    'Ruby on Rails',
+    'RxJS',
+    'Angular',
     'Vue',
-    'AWS',
+    'Ruby on Rails',
+    'Java (Spring Boot)',
+    'REST APIs',
     'PostgreSQL',
     'Docker',
-    'Git',
+    'CI/CD',
+    'GCP',
+    'AWS',
+    'Jenkins',
   ],
-  Languages: [
-    'JavaScript',
-    'TypeScript',
-    'HTML & CSS',
-    'Java',
-    'Ruby',
-    'Python',
-    'SQL',
+
+  Product: [
+    'Design Systems',
+    'Accessibility',
+    'Responsive & Mobile-First Design',
+    'UX / UI Design',
+    'Figma',
+    'Technical Writing',
+    'Cross-Functional Collaboration',
+    'Mentorship & Technical Leadership',
   ],
-  Others: ['Web Components', 'Figma', 'UX / UI design', 'Technical writing'],
 };
 
 export const education = {

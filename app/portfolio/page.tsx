@@ -76,20 +76,14 @@ export default async function PortfolioPage() {
                 key={repo.id}
                 className="flex h-full flex-col rounded-3xl border border-brand-100 bg-brand-50 p-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h2 className="text-xl font-semibold text-brand-ink">
-                      {repo.name}
-                    </h2>
-                    {repo.language && (
-                      <p className="text-sm font-medium uppercase tracking-[0.3em] text-brand-ink/60">
-                        {repo.language}
-                      </p>
-                    )}
-                  </div>
+                <div className="flex justify-between items-center gap-2">
+                  <h2 className="text-xl font-semibold text-brand-ink">
+                    {repo.name}
+                  </h2>
+
                   <time
                     dateTime={repo.pushed_at}
-                    className="text-xs uppercase tracking-[0.25em] text-brand-ink/50"
+                    className="self-start mt-2 shrink-0 whitespace-nowrap text-xs uppercase tracking-[0.25em] text-brand-ink/50"
                   >
                     Updated{' '}
                     {new Date(repo.pushed_at).toLocaleDateString(undefined, {
@@ -98,6 +92,14 @@ export default async function PortfolioPage() {
                       year: 'numeric',
                     })}
                   </time>
+                </div>
+
+                <div>
+                  {repo.language && (
+                    <p className="text-sm font-medium uppercase tracking-[0.3em] text-brand-ink/60">
+                      {repo.language}
+                    </p>
+                  )}
                 </div>
 
                 {repo.description && (

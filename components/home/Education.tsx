@@ -10,8 +10,8 @@ export function Education() {
         <h2 className="text-3xl font-semibold text-brand-ink">Education</h2>
       </header>
 
-      <div className="rounded-2xl border border-brand-50 bg-brand-50/50 p-6 md:p-8">
-        <h3 className="text-2xl font-semibold text-brand-ink">
+      <div className="rounded-2xl border border-brand-50 bg-brand-50/50">
+        <h3 className="text-xl font-semibold text-brand-ink">
           {education.institution}
         </h3>
         <p className="mt-1 text-brand-ink/70">{education.program}</p>
