@@ -14,7 +14,7 @@ export function Footer() {
         <button
           type="button"
           onClick={scrollToTop}
-          className="flex items-center gap-2 rounded-full border border-brand-100 px-4 py-2 text-brand-ink transition-colors hover:border-brand-300 hover:text-brand-600"
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-brand-100 px-4 py-2 text-brand-ink transition-colors hover:border-brand-300 hover:text-brand-600"
           aria-label="Scroll back to top"
         >
           <ArrowUp className="h-4 w-4" />

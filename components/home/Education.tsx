@@ -4,7 +4,7 @@ export function Education() {
   return (
     <section
       id="education"
-      className="rounded-3xl border border-brand-100 bg-white px-6 py-12 shadow-sm md:px-12"
+      className="rounded-3xl border border-brand-100 bg-brand-50 px-6 py-12 shadow-sm md:px-12"
     >
       <header className="mb-8">
         <h2 className="text-3xl font-semibold text-brand-ink">Education</h2>

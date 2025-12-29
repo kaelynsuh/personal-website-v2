@@ -52,7 +52,7 @@ export default async function PortfolioPage() {
   return (
     <AppShell>
       <div className="flex w-full flex-col gap-10">
-        <header className="rounded-3xl border border-brand-100 bg-white px-6 py-12 text-center shadow-sm md:px-12">
+        <header className="rounded-3xl border border-brand-100 bg-brand-50 px-6 py-12 text-center shadow-sm md:px-12">
           <h1 className="text-3xl font-semibold text-brand-ink">
             Open Source Portfolio
           </h1>
@@ -63,7 +63,7 @@ export default async function PortfolioPage() {
         </header>
 
         {repositories.length === 0 ? (
-          <div className="rounded-3xl border border-brand-100 bg-white px-6 py-12 text-center shadow-sm md:px-12">
+          <div className="rounded-3xl border border-brand-100 bg-brand-50 px-6 py-12 text-center shadow-sm md:px-12">
             <p className="text-brand-ink/75">
               There was an issue fetching projects from GitHub. Please try again
               later.
@@ -74,7 +74,7 @@ export default async function PortfolioPage() {
             {repositories.map((repo) => (
               <article
                 key={repo.id}
-                className="flex h-full flex-col rounded-3xl border border-brand-100 bg-white p-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
+                className="flex h-full flex-col rounded-3xl border border-brand-100 bg-brand-50 p-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>

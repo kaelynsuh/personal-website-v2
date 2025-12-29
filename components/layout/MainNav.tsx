@@ -3,6 +3,7 @@
 import { Menu, Moon, Sun, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/components/ThemeProvider';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
@@ -16,6 +17,14 @@ const primaryLinks = [
 export function MainNav() {
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const pathname = usePathname();
+
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +45,7 @@ export function MainNav() {
     >
       <div className="mx-auto flex justify-between max-w-5xl items-center gap-8 p-4 md:px-8">
         <div className="size-[40px] flex items-center justify-center">
-          <Link href="/" aria-label="Home">
+          <Link href="/" aria-label="Home" onClick={handleHomeClick}>
             <Image
               src="/images/logo.png"
               alt="logo"
@@ -52,6 +61,7 @@ export function MainNav() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={link.href === '/' ? handleHomeClick : undefined}
               className="transition-colors hover:text-brand-600"
             >
               {link.label}
@@ -110,7 +120,10 @@ export function MainNav() {
                         <Link
                           key={link.href}
                           href={link.href}
-                          onClick={() => close()}
+                          onClick={(e) => {
+                            if (link.href === '/') handleHomeClick(e);
+                            close();
+                          }}
                           className="rounded-md px-1 py-2 transition-colors hover:text-brand-600"
                         >
                           {link.label}
