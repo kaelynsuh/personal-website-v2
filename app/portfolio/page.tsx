@@ -14,8 +14,7 @@ type Repo = {
 
 export const metadata: Metadata = {
   title: 'Portfolio | Kaelyn Suh',
-  description:
-    'Browse open source projects and code experiments by software engineer Kaelyn Suh.',
+  description: 'Browse open source projects by Kaelyn Suh.',
 };
 
 async function getRepositories(): Promise<Repo[]> {
